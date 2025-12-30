@@ -1,7 +1,7 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
 import SkillIcon from '@/components/SkillIcon'
-import { Gamepad2, Code, Lightbulb, BookOpen, MapPin, Mail } from 'lucide-react'
+import { Code, Lightbulb, BookOpen, MapPin, Mail } from 'lucide-react'
 
 const About = () => {
   const experiencedSkills = [
@@ -20,7 +20,7 @@ const About = () => {
         <div className="text-center space-y-4">
           <h1 className="text-4xl md:text-6xl font-bold">About Me</h1>
           <p className="text-xl text-muted-foreground">
-            Developer | Student | Researcher | Gamer
+            Developer | Student | Researcher
           </p>
           <div className="flex flex-wrap gap-4 justify-center text-muted-foreground">
             <div className="flex items-center gap-2">
@@ -39,7 +39,6 @@ const About = () => {
         <Card>
           <CardHeader>
             <CardTitle>Introduction</CardTitle>
-            <CardDescription>A bit about myself</CardDescription>
           </CardHeader>
           <CardContent className="space-y-4">
             <p className="text-muted-foreground">
@@ -57,19 +56,9 @@ const About = () => {
         <Card>
           <CardHeader>
             <CardTitle>What Drives Me</CardTitle>
-            <CardDescription>My passions and interests</CardDescription>
           </CardHeader>
           <CardContent className="space-y-6">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div className="flex gap-3">
-                <Gamepad2 className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
-                <div>
-                  <h4 className="font-semibold mb-1">Video Games</h4>
-                  <p className="text-sm text-muted-foreground">
-                    Passionate competitive gamer with a love for competition and fun with friends.
-                  </p>
-                </div>
-              </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               <div className="flex gap-3">
                 <Code className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
                 <div>
@@ -103,57 +92,7 @@ const About = () => {
 
         <Card>
           <CardHeader>
-            <CardTitle>Gaming</CardTitle>
-            <CardDescription>Competitive gaming achievements</CardDescription>
-          </CardHeader>
-          <CardContent className="space-y-4">
-            <p className="text-muted-foreground">
-              When I'm not coding, you'll find me playing ranked in competitive games. I'm passionate about
-              improving my skills and climbing the ladder.
-            </p>
-            <div className="space-y-3">
-              <div className="flex items-start gap-3">
-                <div className="flex-shrink-0">
-                  <img src="/images/games/LoL_Icon_Rendered_Hi-Res.png" alt="League of Legends" className="w-12 h-12 object-contain" />
-                </div>
-                <div>
-                  <div className="flex items-center gap-2 mb-1">
-                    <h4 className="font-semibold">League of Legends</h4>
-                    <Badge className="bg-gradient-to-r from-red-600 to-orange-500 text-white">Grandmaster</Badge>
-                  </div>
-                  <p className="text-sm text-muted-foreground">
-                    Peaked at Grandmaster rank. Main: Janna - I found myself enjoying empowering others and providing disengage to give my teammates space to play. I gained a lot of knowledge about what it takes to learn and get better at something by playing League.
-                  </p>
-                </div>
-              </div>
-              <div className="border-l-2 border-primary pl-4 space-y-2">
-                <p className="text-sm font-semibold">Other games I enjoy:</p>
-                <div className="flex flex-wrap gap-2">
-                  <Badge variant="outline" className="gap-1.5">
-                    <img src="/images/games/Rust_Marque-1080.png" alt="Rust" className="h-14 w-auto -m-4" />
-                    Rust
-                  </Badge>
-                  <Badge variant="outline" className="gap-1.5">
-                    <img src="/images/games/image.png" alt="CS2" className="h-6 w-6 object-contain" />
-                    CS2
-                  </Badge>
-                  <Badge variant="outline" className="gap-1.5">
-                    <Gamepad2 className="h-3.5 w-3.5" />
-                    Escape from Tarkov
-                  </Badge>
-                </div>
-              </div>
-              <div className="text-xs text-muted-foreground mt-4 pt-4 border-t border-border">
-                <p>League of Legends and all related logos are trademarks of Riot Games, Inc. Rust is a trademark of Facepunch Studios. Counter-Strike 2 is a trademark of Valve Corporation. Escape from Tarkov is a trademark of Battlestate Games Limited. All trademarks are property of their respective owners.</p>
-              </div>
-            </div>
-          </CardContent>
-        </Card>
-
-        <Card>
-          <CardHeader>
             <CardTitle>Technical Skills</CardTitle>
-            <CardDescription>Technologies I work with - hover for details and click to see projects</CardDescription>
           </CardHeader>
           <CardContent className="space-y-6">
             <div>
@@ -186,7 +125,6 @@ const About = () => {
         <Card>
           <CardHeader>
             <CardTitle>Education</CardTitle>
-            <CardDescription>My academic background</CardDescription>
           </CardHeader>
           <CardContent className="space-y-6">
             <div>
@@ -216,7 +154,6 @@ const About = () => {
         <Card>
           <CardHeader>
             <CardTitle>Experience</CardTitle>
-            <CardDescription>Work and research experience</CardDescription>
           </CardHeader>
           <CardContent className="space-y-6">
             <div>
