@@ -32,31 +32,11 @@ const Projects = () => {
     {
       id: 1,
       name: 'Godot Game Development',
-      description: 'Building my first game using the Godot game engine, exploring game mechanics and level design.',
+      description: 'Working on stronger anti cheat systems and network management for the Godot engine.',
       technologies: ['Godot', 'GDScript'],
       status: 'In Development',
       category: 'current',
       date: '2024 - Present',
-    },
-    {
-      id: 2,
-      name: 'Custom Drone Hardware Research',
-      description: 'Ongoing research into custom drone hardware solutions for autonomous navigation in GPS-denied environments. Exploring Robot Operating System (ROS), Time-of-Flight sensors, and advanced optical sensory capabilities to overcome limitations discovered in initial proof of concept work.',
-      technologies: ['ROS', 'Python', 'Hardware Design'],
-      status: 'In Development',
-      category: 'class',
-      date: 'June 2024 - Present',
-    },
-    {
-      id: 3,
-      name: 'AI-Powered Development Platform',
-      description: 'Building a development platform that enables users to submit projects and request LLM-powered bug fixes and feature additions. The system spins up Docker containers to run projects, analyzes program output and exit codes, and allows AI to iteratively refine implementations until successful. Built for CSCI 602 Foundations of Software Engineering.',
-      technologies: ['React', 'Vite', 'FastAPI', 'Ollama', 'Supabase', 'Docker'],
-      github: 'https://github.com/Spencerhoag/cici-602-bug-fix-project',
-      status: 'In Development',
-      category: 'current',
-      date: 'Fall 2025',
-      course: 'CSIS 602',
     },
   ]
 
@@ -64,6 +44,16 @@ const Projects = () => {
   const pastProjects = [
     {
       id: 3,
+      name: 'AI-Powered Development Platform',
+      description: 'Built a development platform that enables users to submit projects and request LLM-powered bug fixes and feature additions. The system spins up Docker containers to run projects, analyzes program output and exit codes, and allows AI to iteratively refine implementations until successful. Built for CSIS 602 Foundations of Software Engineering.',
+      technologies: ['React', 'Vite', 'FastAPI', 'Ollama', 'Supabase', 'Docker'],
+      github: 'https://github.com/Spencerhoag/cici-602-bug-fix-project',
+      category: 'class',
+      date: 'Fall 2025',
+      course: 'CSIS 602',
+    },
+    {
+      id: 4,
       name: 'Polygon - Hackathon Game',
       description: 'A game studio focused on bringing AI agents to multiplayer games, eliminating the "waiting for players" problem. Built Mimic, a social deduction party game where AI agents automatically fill empty seats alongside human players. One random player (human OR AI) is secretly the "Mimic" who doesn\'t know the secret word - can you spot who\'s AI and who\'s the imposter?',
       technologies: ['Next.js', 'Firebase', 'Google ADK'],
@@ -73,7 +63,7 @@ const Projects = () => {
       achievement: 'First Place Winner',
     },
     {
-      id: 4,
+      id: 5,
       name: 'Tello Drone Navigation Proof of Concept',
       description: 'Developed proof of concept for autonomous drone navigation using a Tello drone. Implemented Python computer vision with OpenCV for barcode scanning and inventory counting while navigating along warehouse shelves. Successfully demonstrated autonomous shelf navigation and published research paper on findings. This work identified hardware limitations that led to ongoing custom hardware research.',
       technologies: ['Python', 'OpenCV', 'Computer Vision', 'Tello SDK'],
@@ -83,7 +73,7 @@ const Projects = () => {
       achievement: 'Published Research Paper',
     },
     {
-      id: 5,
+      id: 6,
       name: 'Godot Engine OSS Contribution',
       description: 'My first open source contribution to the Godot game engine. Fixed a UI bug in the core engine, gaining experience with C++ and large-scale open source collaboration.',
       technologies: ['C++', 'Godot Engine'],
@@ -92,30 +82,23 @@ const Projects = () => {
       date: '2025',
     },
     {
-      id: 6,
+      id: 7,
       name: 'Cummins WIP Job Tracking Dashboard',
       description: 'Collaborated with 2 other students to develop a dashboard for a local Cummins plant, providing better visibility into the status of different Work-in-Progress jobs at their location. Built as the capstone project for CSCI 462 Software Engineering.',
       technologies: ['React', 'MySQL', 'JavaScript'],
+      github: 'https://github.com/carterwilson12/CumminsDashboard',
       category: 'class',
       date: 'Spring 2024',
       course: 'CSCI 462',
     },
     {
-      id: 7,
+      id: 8,
       name: 'FindMyRoomie',
       description: 'A React-based web application with Firebase backend designed to improve the college roommate matching experience. Built as part of CSCI 362 Software Engineering coursework, implementing features for profile matching, messaging, and user preferences.',
       technologies: ['React', 'Firebase', 'JavaScript'],
       category: 'class',
       date: 'Fall 2023',
       course: 'CSCI 362',
-    },
-    {
-      id: 8,
-      name: 'Chess Roguelike with Minimax AI',
-      description: 'Developed a chess roguelike game featuring AI opponents powered by minimax algorithm with alpha-beta pruning. Learned and implemented game tree search optimization techniques for intelligent decision-making. Project remains unfinished but provided valuable experience in AI algorithms and game development.',
-      technologies: ['Python', 'Minimax Algorithm', 'Alpha-Beta Pruning'],
-      category: 'personal',
-      date: '2023',
     },
   ]
 
@@ -283,17 +266,6 @@ const Projects = () => {
               </div>
             ))}
           </div>
-        </div>
-
-        <div className="text-center text-muted-foreground p-6 bg-muted/50 rounded-lg">
-          <p className="text-sm">
-            All projects are defined in{' '}
-            <code className="bg-background px-2 py-1 rounded text-xs">src/pages/Projects.jsx</code>
-          </p>
-          <p className="text-sm mt-2">
-            Edit the <code className="bg-background px-2 py-1 rounded text-xs">currentProjects</code> and{' '}
-            <code className="bg-background px-2 py-1 rounded text-xs">pastProjects</code> arrays to add or modify projects
-          </p>
         </div>
       </div>
     </div>
