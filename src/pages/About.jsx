@@ -177,13 +177,13 @@ const About = () => {
                   <h3 className="font-semibold text-lg">Research - Autonomous Drone Navigation</h3>
                   <p className="text-muted-foreground">College of Charleston</p>
                 </div>
-                <Badge variant="outline">June 2024 - Present</Badge>
+                <Badge variant="outline">June 2024 - December 2025</Badge>
               </div>
               <ul className="list-disc list-inside text-muted-foreground mt-2 space-y-1">
                 <li>Developed proof of concept for autonomous drone navigation in GPS-denied environments</li>
                 <li>Utilized Python Computer Vision libraries for barcode scanning and inventory counting</li>
-                <li>Working on custom drone hardware to improve capabilities</li>
-                <li>Researching Robot Operating System (ROS), Time-of-flight sensors, and optical sensory capabilities</li>
+                <li>Worked on custom drone hardware to improve capabilities</li>
+                <li>Researched Robot Operating System (ROS), Time-of-flight sensors, and optical sensory capabilities</li>
               </ul>
             </div>
           </CardContent>
